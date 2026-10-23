@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --background: #0f1117;
+  --surface: #171a23;
+  --surface-hover: #202431;
+  --border: #292e3b;
+  --text: #f8fafc;
+  --text-muted: #94a3b8;
+  --primary: #8b5cf6;
+  --primary-hover: #7c3aed;
+  --error: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(228, 19, 19));
+  --success: linear-gradient(to right, rgba(255, 0, 0, 0), #22c55e);
+}
+
+body {
+  min-height: 100vh;
+  background: var(--background);
+  color: var(--text);
+  font-family: "Ubuntu", sans-serif;
+}
+
+main {
+  width: 100%;
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0 2rem;
+}
+
+button {
+  border: 0;
+  border-radius: .75rem;
+  padding: .75rem 1rem;
+  background: var(--primary);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: .2s;
+}
+
+button:hover {
+  background: var(--primary-hover);
+  filter: none;
+  transform: translateY(-1px);
+}
+
+#thema {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+}
+
+#thema:hover {
+  background: var(--surface);
+  border-color: var(--primary);
+  color: var(--text);
+}
+
+input {
+  width: 100%;
+  padding: 1.25rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  color: var(--text);
+  font-size: 2rem;
+  text-align: end;
+  outline: none;
+}
+
+input:focus {
+  border-color: var(--primary);
+}
+
+#keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: .75rem;
+  margin: 1.5rem 0;
+}
+
+#keys button {
+  padding: 1.25rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-size: 1.25rem;
+}
+
+#keys button:hover {
+  background: var(--surface-hover);
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+#result {
+  border-width: 1px 1px 1px 0;
+  border-radius: 0 1rem 1rem 0;
+  height: 4.25rem;
+
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+#result.success,
+#result.error {
+  opacity: 1;
+}
+
+#copyToClipboard {
+  width: 11rem;
+  height: 4.25rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 1rem 0 0 1rem;
+  color: var(--text-muted);
+}
+
+#copyToClipboard:hover {
+  background: var(--surface-hover);
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.error {
+  background: var(--error);
+  color: white;
+}
+
+.success {
+  background: var(--success);
+  color: white;
+}
