@@ -37,11 +37,13 @@ Projeto web desenvolvido para praticar JavaScript e os fundamentos da lógica de
 - Controle de versão com Git e publicação de projetos no GitHub.
 
 ## 💻 Como executar o projeto
-1. Faça o download ou clone este repositório.
+1. Faça o download ou clique no deploy do projeto logo abaixo.
 2. Abra a pasta do projeto.
 3. Abra o arquivo index.html em um navegador.
 4. Utilize os botões da calculadora para inserir expressões e realizar cálculos.
-- Não é necessário instalar dependências ou utilizar um servidor backend.
+
+## 🌐 Demonstração online
+- Acesse a calculadora: https://calculadora-sem-eval.netlify.app/
 
 ## 📁 Estrutura do projeto
 - index.html — estrutura da calculadora e seus elementos.
@@ -51,7 +53,7 @@ Projeto web desenvolvido para praticar JavaScript e os fundamentos da lógica de
 
 ## 🎯 Objetivo do projeto
 
-- Este projeto surgiu a partir de uma calculadora desenvolvida durante o curso da OneBitCode, cuja primeira versão utilizava a função eval() para realizar os cálculos. Nesta nova versão, meu objetivo foi recriar a lógica da calculadora sem utilizar essa função, desenvolvendo minha própria forma de interpretar e calcular expressões matemáticas com JavaScript.
+- Este projeto surgiu a partir de uma calculadora desenvolvida durante o curso da OneBitCode, cuja primeira versão utilizava a função eval() para realizar os cálculos. Nesta nova versão, meu objetivo foi recriar a lógica da calculadora sem utilizar essa função, desenvolvendo um interpretador próprio de expressões matemáticas.
 
 - Foi um desafio importante para aprofundar meus conhecimentos em lógica de programação, manipulação de strings, recursividade e resolução de problemas.
 
